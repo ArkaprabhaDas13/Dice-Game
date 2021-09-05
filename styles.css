@@ -1,0 +1,13 @@
+
+.dice
+{
+    margin-left: 37.5%;
+    width: 25%;
+}
+
+.refresh{
+    font-family: 'Comic Neue', cursive;
+    position: relative;
+    font-size: 80px;
+    padding-bottom: 30px;
+}

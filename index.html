@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <title>Dice Up</title>
+    <script src="javascript.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<!-- -------------------------------body ---------------------------------------- -->
+
+
+
+    <body style="background-color:#FCF0C8;">
+        
+
+        <center><h1 class="refresh">Dice Up</h1></center>
+
+        <center><button type="button" id="button" class="btn btn-outline-primary" onclick="doFunction(Random);">Roll</button></center>
+        <center><h3 style="padding-top: 40px;">Click here to roll the dice</h3></center>
+ 
+
+        <img src="dices.png" alt="" class="dice" id="no1">
+
+
+
+
+<!-- ------------------------------------------------- Java Script -------------------------------------------------------- -->
+
+        <script>
+
+            document.querySelector("button").onclick = function() {random()};
+
+            function random()
+            {
+                var image = document.getElementById('no1');
+                var c= 0;
+                c = Math.random()*7;   
+                c = Math.floor(c); 
+
+                if(c==1)
+                {    
+
+                            image.src = "1.png";
+                }
+
+                
+                if(c==2)
+                {    
+
+                            image.src = "2.png";
+                }
+                
+                if(c==3)
+                {    
+
+                            image.src = "3.png";
+                } 
+
+                if(c==4)
+                {    
+
+                            image.src = "4.png";
+                } 
+
+                if(c==5)
+                {    
+
+                            image.src = "5.png";
+                } 
+
+                if(c==6)
+                {    
+
+                            image.src = "6.png";
+                } 
+
+               
+            }
+
+        </script>
+        
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+
+    </body>
+</html>
